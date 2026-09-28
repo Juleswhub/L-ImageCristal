@@ -443,44 +443,29 @@
 }
 
 .about-page-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(260px, 360px) minmax(0, 1fr);
     gap: 60px;
-    align-items: flex-start;
+    align-items: start;
     margin-bottom: 60px;
 }
 
-.about-photo {
-    flex-shrink: 0;
-    width: 300px;
-    height: auto;
-    line-height: 0;
-    overflow: visible;
+.about-visuals {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
 }
 
-.about-photo img {
+.about-visuals img {
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
-    object-fit: cover;
-    vertical-align: top;
+    object-fit: contain;
 }
-        
+
 .about-text-content {
-    flex: 1;
-}
-
-.about-text-content h2 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #1a1a1a;
-}
-
-.about-text-content p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #666;
-    margin-bottom: 20px;
+    min-width: 0;
 }
 
 @media (max-width: 768px) {
@@ -1446,11 +1431,14 @@ The island of Lanzarote generates feelings of familiarity, detachment, and isola
     <!-- About Page -->
           <div id="about" class="page">
     <div class="about-page-section">
-        <div class="about-photo">
-            <img src="/limagecristal/assets/AlexisJules3.png" alt="Alexis Jules">
-            <div class="about-photo">
-            <img src="/limagecristal/assets/L'imageCristal.png" alt="ImageCristal">
+        <div class="about-visuals">
+            <img src="/limagecristal/assets/AlexisJules3.png"
+                 alt="Alexis Jules">
+
+            <img src="/limagecristal/assets/L'imageCristal.png"
+                 alt="L'Image Cristal">
         </div>
+
         <div class="about-text-content">
             <h2>About L'Image Cristal</h2>
                         <p>
