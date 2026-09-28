@@ -12,6 +12,16 @@
             box-sizing: border-box;
         }
 
+        body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: url('/JulesWax/assets/Background.gif') center / cover no-repeat;
+    opacity: 0.15;   /* raise for a stronger effect */
+    pointer-events: none;
+}
+
        body {
     font-family: "baga", sans-serif;
     font-weight: 300;
@@ -798,19 +808,19 @@ body.menu-open {
     </div>
     <div class="gallery">
         <div class="gallery-item" onclick="showDetail('cruise')">
-            <img src="/JulesWax/Assets/AfficheCruiseMe.png" alt="Cruise Me">
+            <img src="/JulesWax/assets/AfficheCruiseMe.png" alt="Cruise Me">
             <div class="overlay">
                 <div class="overlay-text">Cruise Me, Cruise Me Babe</div>
             </div>
         </div>
         <div class="gallery-item" onclick="showDetail('acheron')">
-            <img src="/JulesWax/Assets/Acheron.jpg" alt="Acheron">
+            <img src="/JulesWax/assets/Acheron.jpg" alt="Acheron">
             <div class="overlay">
                 <div class="overlay-text">Acheron</div>
             </div>
         </div>
         <div class="gallery-item" onclick="showDetail('burns')">
-            <img src="/JulesWax/Assets/WhenItBurns.jpg" alt="When It Burns">
+            <img src="/JulesWax/assets/WhenItBurns.jpg" alt="When It Burns">
             <div class="overlay">
                 <div class="overlay-text">When It Burns</div>
             </div>
@@ -826,31 +836,31 @@ body.menu-open {
                     </div>
                     <div class="gallery">
                         <div class="gallery-item" onclick="showDetail('tedx')">
-                            <img src="/JulesWax/Assets/TedX.jpg" alt="TedX">
+                            <img src="/JulesWax/assets/TedX.jpg" alt="TedX">
                             <div class="overlay">
                                 <div class="overlay-text">TedX</div>
                             </div>
                         </div>
                         <div class="gallery-item" onclick="showDetail('motion')">
-                            <img src="/JulesWax/Assets/Motion.jpg" alt="Motion Design">
+                            <img src="/JulesWax/assets/Motion.jpg" alt="Motion Design">
                             <div class="overlay">
                                 <div class="overlay-text">Motion Design</div>
                             </div>
                         </div>
                         <div class="gallery-item" onclick="showDetail('firstfloor')">
-                            <img src="/JulesWax/Assets/FirstFloor.jpg" alt="FirstFloor">
+                            <img src="/JulesWax/assets/FirstFloor.jpg" alt="FirstFloor">
                             <div class="overlay">
                                 <div class="overlay-text">FirstFloor - Interior Design</div>
                             </div>
                         </div>
                         <div class="gallery-item" onclick="showDetail('smilin')">
-                            <img src="/JulesWax/Assets/SmilinGlass.jpg" alt="Smilin Glass">
+                            <img src="/JulesWax/assets/SmilinGlass.jpg" alt="Smilin Glass">
                             <div class="overlay">
                                 <div class="overlay-text">Smilin' Glass</div>
                             </div>
                         </div>
                         <div class="gallery-item" onclick="showDetail('interviews')">
-                            <img src="/JulesWax/Assets/Interviews.png" alt="Interviews">
+                            <img src="/JulesWax/assets/Interviews.png" alt="Interviews">
                             <div class="overlay">
                                 <div class="overlay-text">Interviews</div>
                             </div>
@@ -866,25 +876,25 @@ body.menu-open {
                     </div>
                     <div class="gallery">
                         <div class="gallery-item" onclick="showDetail('ai')">
-                            <img src="/JulesWax/Assets/AI.png" alt="AI Experience: See Through The Mind Of A Machine">
+                            <img src="/JulesWax/assets/AI.png" alt="AI Experience: See Through The Mind Of A Machine">
                             <div class="overlay">
                                 <div class="overlay-text">AI Experience: See Through The Mind Of A Machine</div>
                             </div>
                         </div>
                         <div class="gallery-item" onclick="showDetail('european')">
-                            <img src="/JulesWax/Assets/Symbiosis.jpg" alt="European Capital">
+                            <img src="/JulesWax/assets/Symbiosis.jpg" alt="European Capital">
                             <div class="overlay">
                                 <div class="overlay-text">European Capital of Culture Elevsis</div>
                             </div>
                         </div>
                         <div class="gallery-item" onclick="showDetail('sue')">
-                            <img src="/JulesWax/Assets/Sue.png" alt="Sue By The Sea">
+                            <img src="/JulesWax/assets/Sue.png" alt="Sue By The Sea">
                             <div class="overlay">
                                 <div class="overlay-text">Sue By The Sea</div>
                             </div>
                         </div>
                         <div class="gallery-item" onclick="showDetail('vr')">
-                            <img src="/JulesWax/Assets/Vr.png" alt="Virtual Reality">
+                            <img src="/JulesWax/assets/Vr.png" alt="Virtual Reality">
                             <div class="overlay">
                                 <div class="overlay-text">Virtual Reality</div>
                             </div>
@@ -900,19 +910,19 @@ body.menu-open {
                     </div>
                     <div class="gallery">
                         <div class="gallery-item" onclick="showDetail('fanzine')">
-                            <img src="/JulesWax/Assets/Fanzine.png" alt="Fanzine">
+                            <img src="/JulesWax/assets/Fanzine.png" alt="Fanzine">
                             <div class="overlay">
                                 <div class="overlay-text">Fanzine Design</div>
                             </div>
                         </div>
                         <div class="gallery-item" onclick="showDetail('analogue')">
-                            <img src="/JulesWax/Assets/Analogue.png" alt="Analogue">
+                            <img src="/JulesWax/assets/Analogue.png" alt="Analogue">
                             <div class="overlay">
                                 <div class="overlay-text">Analogue</div>
                             </div>
                         </div>
                         <div class="gallery-item" onclick="showDetail('digital')">
-                            <img src="/JulesWax/Assets/Digital.jpg" alt="Digital">
+                            <img src="/JulesWax/assets/Digital.jpg" alt="Digital">
                             <div class="overlay">
                                 <div class="overlay-text">Digital</div>
                             </div>
@@ -926,31 +936,31 @@ body.menu-open {
             <div id="corporate" class="page">
                 <div class="gallery">
                     <div class="gallery-item" onclick="showDetail('tedx')">
-                        <img src="/JulesWax/Assets/TedX.jpg" alt="TedX">
+                        <img src="/JulesWax/assets/TedX.jpg" alt="TedX">
                         <div class="overlay">
                             <div class="overlay-text">TedX</div>
                         </div>
                     </div>
                     <div class="gallery-item" onclick="showDetail('motion')">
-                        <img src="/JulesWax/Assets/Motion.jpg" alt="Motion Design">
+                        <img src="/JulesWax/assets/Motion.jpg" alt="Motion Design">
                         <div class="overlay">
                             <div class="overlay-text">Motion Design</div>
                         </div>
                     </div>
                     <div class="gallery-item" onclick="showDetail('firstfloor')">
-                        <img src="/JulesWax/Assets/FirstFloor.jpg" alt="FirstFloor">
+                        <img src="/JulesWax/assets/FirstFloor.jpg" alt="FirstFloor">
                         <div class="overlay">
                             <div class="overlay-text">FirstFloor - Interior Design</div>
                         </div>
                     </div>
                     <div class="gallery-item" onclick="showDetail('smilin')">
-                        <img src="/JulesWax/Assets/SmilinGlass.jpg" alt="Smilin Glass">
+                        <img src="/JulesWax/assets/SmilinGlass.jpg" alt="Smilin Glass">
                         <div class="overlay">
                             <div class="overlay-text">Smilin' Glass</div>
                         </div>
                     </div>
                     <div class="gallery-item" onclick="showDetail('interviews')">
-                        <img src="/JulesWax/Assets/Interviews.png" alt="Interviews">
+                        <img src="/JulesWax/assets/Interviews.png" alt="Interviews">
                         <div class="overlay">
                             <div class="overlay-text">Interviews</div>
                         </div>
@@ -963,26 +973,26 @@ body.menu-open {
                 <div class="gallery">
 
                     <div class="gallery-item" onclick="showDetail('ai')">
-                        <img src="/JulesWax/Assets/AI.png" alt="AI Experience: See Through The Mind Of A Machine">
+                        <img src="/JulesWax/assets/AI.png" alt="AI Experience: See Through The Mind Of A Machine">
                         <div class="overlay">
                             <div class="overlay-text">AI Experience: See Through The Mind Of A Machine</div>
                         </div>
                     </div>
                     
                     <div class="gallery-item" onclick="showDetail('european')">
-                        <img src="/JulesWax/Assets/Symbiosis.jpg" alt="European Capital">
+                        <img src="/JulesWax/assets/Symbiosis.jpg" alt="European Capital">
                         <div class="overlay">
                             <div class="overlay-text">European Capital of Culture Elevsis</div>
                         </div>
                     </div>
                     <div class="gallery-item" onclick="showDetail('sue')">
-                        <img src="/JulesWax/Assets/Sue.png" alt="Sue By The Sea">
+                        <img src="/JulesWax/assets/Sue.png" alt="Sue By The Sea">
                         <div class="overlay">
                             <div class="overlay-text">Sue By The Sea</div>
                         </div>
                     </div>
                     <div class="gallery-item" onclick="showDetail('vr')">
-                        <img src="/JulesWax/Assets/Vr.png" alt="Virtual Reality">
+                        <img src="/JulesWax/assets/Vr.png" alt="Virtual Reality">
                         <div class="overlay">
                             <div class="overlay-text">Virtual Reality</div>
                         </div>
@@ -994,19 +1004,19 @@ body.menu-open {
             <div id="photography" class="page">
                 <div class="gallery">
                     <div class="gallery-item" onclick="showDetail('fanzine')">
-                        <img src="/JulesWax/Assets/Fanzine.png" alt="Fanzine Design">
+                        <img src="/JulesWax/assets/Fanzine.png" alt="Fanzine Design">
                         <div class="overlay">
                             <div class="overlay-text">Fanzine Design</div>
                         </div>
                     </div>
                     <div class="gallery-item" onclick="showDetail('analogue')">
-                        <img src="/JulesWax/Assets/Analogue.png" alt="Analogue">
+                        <img src="/JulesWax/assets/Analogue.png" alt="Analogue">
                         <div class="overlay">
                             <div class="overlay-text">Analogue</div>
                         </div>
                     </div>
                     <div class="gallery-item" onclick="showDetail('digital')">
-                        <img src="/JulesWax/Assets/Digital.jpg" alt="Digital">
+                        <img src="/JulesWax/assets/Digital.jpg" alt="Digital">
                         <div class="overlay">
                             <div class="overlay-text">Digital</div>
                         </div>
@@ -1030,7 +1040,7 @@ An insomniac photographer, who, during a late-night phone call with a mysterious
                 Watch Video
             </a>
             <a href="https://vimeo.com/1075270341" target="_blank">
-                <img class="detail-image" src="/JulesWax/Assets/Moodboard.png" alt="Cruise Me scene 1">
+                <img class="detail-image" src="/JulesWax/assets/Moodboard.png" alt="Cruise Me scene 1">
             </a>
         </div>
     </div>
@@ -1040,7 +1050,7 @@ An insomniac photographer, who, during a late-night phone call with a mysterious
                 Watch Video
             </a>
             <a href="https://vimeo.com/1075270341" target="_blank">
-                <img class="detail-image" src="/JulesWax/Assets/AfficheCruiseMe.png" alt="Cruise Me scene 2">
+                <img class="detail-image" src="/JulesWax/assets/AfficheCruiseMe.png" alt="Cruise Me scene 2">
             </a>
         </div>
     </div>
@@ -1070,18 +1080,18 @@ Duration: 15min
                 Watch Video
             </a>
             <a href="https://vimeo.com/700356005" target="_blank">
-                <img class="detail-image" src="/JulesWax/Assets/Acheron.jpg" alt="Acheron">
+                <img class="detail-image" src="/JulesWax/assets/Acheron.jpg" alt="Acheron">
             </a>
         </div>
     </div>
     <div class="detail-content">
         <a href="https://vimeo.com/700356005" target="_blank">
-            <img class="detail-image" src="/JulesWax/Assets/Acheron2.jpg" alt="Acheron2">
+            <img class="detail-image" src="/JulesWax/assets/Acheron2.jpg" alt="Acheron2">
         </a>
     </div>
     <div class="detail-content">
         <a href="https://vimeo.com/700356005" target="_blank">
-            <img class="detail-image" src="/JulesWax/Assets/Acheron3.jpg" alt="Acheron3">
+            <img class="detail-image" src="/JulesWax/assets/Acheron3.jpg" alt="Acheron3">
         </a>
     </div>
 </div>
@@ -1101,7 +1111,7 @@ Official selection Experimental Film Competition organised by Director Nicolas W
                 Watch Video
             </a>
             <a href="https://vimeo.com/600314397" target="_blank">
-                <img class="detail-image" src="/JulesWax/Assets/WhenItBurns.jpg" alt="When It Burns poster">
+                <img class="detail-image" src="/JulesWax/assets/WhenItBurns.jpg" alt="When It Burns poster">
             </a>
         </div>
     </div>
@@ -1126,7 +1136,7 @@ Production of the event, a Teaser, and a Making-Of
                 Watch Video
             </a>
             <a href="https://vimeo.com/613517647" target="_blank">
-                <img class="detail-image" src="/JulesWax/Assets/TedX.jpg" alt="TedX event">
+                <img class="detail-image" src="/JulesWax/assets/TedX.jpg" alt="TedX event">
             </a>
         </div>
     </div>
@@ -1144,7 +1154,7 @@ Production of the event, a Teaser, and a Making-Of
                 Watch Video
             </a>
             <a href="https://vimeo.com/1098530188" target="_blank">
-                <img class="detail-image" src="/JulesWax/Assets/Motion.jpg" alt="Motion Design">
+                <img class="detail-image" src="/JulesWax/assets/Motion.jpg" alt="Motion Design">
             </a>
         </div>
     </div>
@@ -1164,7 +1174,7 @@ Directed and edited a promotional video</p>
                 Watch Video
             </a>
             <a href="https://vimeo.com/631959129" target="_blank">
-                <img class="detail-image" src="/JulesWax/Assets/FirstFloor.jpg" alt="FirstFloor project">
+                <img class="detail-image" src="/JulesWax/assets/FirstFloor.jpg" alt="FirstFloor project">
             </a>
         </div>
     </div>
@@ -1185,7 +1195,7 @@ Directed and edited a promotional video</p>
                 Watch Video
             </a>
             <a href="https://vimeo.com/595793388" target="_blank">
-                <img class="detail-image" src="/JulesWax/Assets/SmilinGlass.jpg" alt="Smilin Glass">
+                <img class="detail-image" src="/JulesWax/assets/SmilinGlass.jpg" alt="Smilin Glass">
             </a>
         </div>
     </div>
@@ -1208,7 +1218,7 @@ Projected at Luxembourg Learning Centre, Belval, Esch-Sur-Alzette, Luxembourg
         </p>
     </div>
     <div class="detail-content">
-        <img class="detail-image" src="/JulesWax/Assets/AI.png" alt="AI Installation">
+        <img class="detail-image" src="/JulesWax/assets/AI.png" alt="AI Installation">
     </div>
 </div>
 
@@ -1231,7 +1241,7 @@ Directed and edited by Jules Wax
                 Watch Video
             </a>
             <a href="https://vimeo.com/551406902" target="_blank">
-                <img class="detail-image" src="/JulesWax/Assets/Symbiosis.jpg" alt="European Capital project">
+                <img class="detail-image" src="/JulesWax/assets/Symbiosis.jpg" alt="European Capital project">
             </a>
         </div>
     </div>
@@ -1249,7 +1259,7 @@ Directed and edited by Jules Wax
                 Watch Video
             </a>
             <a href="https://www.youtube.com/watch?v=ncAj8gWMjL8" target="_blank">
-                <img class="detail-image" src="/JulesWax/Assets/Sue.png" alt="Sue By The Sea">
+                <img class="detail-image" src="/JulesWax/assets/Sue.png" alt="Sue By The Sea">
             </a>
         </div>
     </div>
@@ -1275,7 +1285,7 @@ Projected at Galerie 39, Dudelange, Luxembourg
                 Watch Video
             </a>
             <a href="https://www.youtube.com/watch?v=nTWIaC6965I" target="_blank">
-                <img class="detail-image" src="/JulesWax/Assets/Vr.png" alt="VR project">
+                <img class="detail-image" src="/JulesWax/assets/Vr.png" alt="VR project">
             </a>
         </div>
     </div>
@@ -1295,16 +1305,16 @@ The island of Lanzarote generates feelings of familiarity, detachment, and isola
                     </p>
                 </div>
                 <div class="detail-content">
-                    <img class="detail-image" src="/JulesWax/Assets/Fanzine.png" alt="Fanzine">
+                    <img class="detail-image" src="/JulesWax/assets/Fanzine.png" alt="Fanzine">
                 </div>
                 <div class="detail-content">
-                    <img class="detail-image" src="/JulesWax/Assets/Fanzine2.png" alt="Fanzine">
+                    <img class="detail-image" src="/JulesWax/assets/Fanzine2.png" alt="Fanzine">
                 </div>
                 <div class="detail-content">
-                    <img class="detail-image" src="/JulesWax/Assets/Fanzine3.png" alt="Fanzine">
+                    <img class="detail-image" src="/JulesWax/assets/Fanzine3.png" alt="Fanzine">
                 </div>
                 <div class="detail-content">
-                    <img class="detail-image" src="/JulesWax/Assets/Fanzine4.png" alt="Fanzine">
+                    <img class="detail-image" src="/JulesWax/assets/Fanzine4.png" alt="Fanzine">
                 </div>
             </div>
 
@@ -1318,10 +1328,10 @@ The island of Lanzarote generates feelings of familiarity, detachment, and isola
                     </p>
                 </div>
                 <div class="detail-content">
-                    <img class="detail-image" src="/JulesWax/Assets/Analogue.png" alt="Analogue photography">
+                    <img class="detail-image" src="/JulesWax/assets/Analogue.png" alt="Analogue photography">
                 </div>
                 <div class="detail-content">
-                    <img class="detail-image" src="/JulesWax/Assets/Analogue2.png" alt="Analogue photography">
+                    <img class="detail-image" src="/JulesWax/assets/Analogue2.png" alt="Analogue photography">
                 </div>
             </div>
 
@@ -1332,10 +1342,10 @@ The island of Lanzarote generates feelings of familiarity, detachment, and isola
                     <p class="detail-description">Contemporary digital photography capturing our deep and mystic relationship to nature's unsettling greatness.</p>
                 </div>
                 <div class="detail-content">
-                    <img class="detail-image" src="/JulesWax/Assets/Digital.jpg" alt="Digital photography">
+                    <img class="detail-image" src="/JulesWax/assets/Digital.jpg" alt="Digital photography">
                 </div>
                 <div class="detail-content">
-                    <img class="detail-image" src="/JulesWax/Assets/Digital2.jpg" alt="Digital photography">
+                    <img class="detail-image" src="/JulesWax/assets/Digital2.jpg" alt="Digital photography">
                 </div>
             </div>
 
@@ -1343,7 +1353,7 @@ The island of Lanzarote generates feelings of familiarity, detachment, and isola
           <div id="about" class="page">
     <div class="about-page-section">
         <div class="about-photo">
-            <img src="/JulesWax/Assets/AlexisJules3.png" alt="Alexis Jules">
+            <img src="/JulesWax/assets/AlexisJules3.png" alt="Alexis Jules">
         </div>
         <div class="about-text-content">
             <h2>About Jules Wax</h2>
@@ -1374,7 +1384,7 @@ The island of Lanzarote generates feelings of familiarity, detachment, and isola
         <p class="detail-description">Documentary-style interviews and testimonial content.</p>
     </div>
     <div class="detail-content">
-        <img class="detail-image" src="/JulesWax/Assets/Interviews.png" alt="Interviews">
+        <img class="detail-image" src="/JulesWax/assets/Interviews.png" alt="Interviews">
     </div>
 </div>
         </main>
