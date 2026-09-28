@@ -463,6 +463,21 @@
     min-width: 0;
 }
 
+    .about-visuals .about-logo {
+    display: block;
+    width: 100%;
+    max-width: 220px;    /* logo size on desktop */
+    margin: 0 auto;
+}
+
+.about-photo {
+    display: block;
+    width: 100%;
+    max-width: 560px;    /* photo size on desktop */
+    height: auto;
+    margin-top: 40px;
+}
+        
 @media (max-width: 768px) {
     .gallery {
         grid-template-columns: 1fr;
@@ -699,15 +714,17 @@ body.menu-open {
 }
 
 @media (max-width: 768px) {
-    body.menu-open {
-        overflow: hidden;
-
-.about-visuals .about-logo { width: 50%; }
-
-.about-photo {
-    width: 100%;         /* slightly bigger on mobile */
-    margin-top: 30px;
-}
+    /* Add overlay when menu is open */
+    .sidebar.open::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 280px;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
     }
     
     /* Add overlay when menu is open */
