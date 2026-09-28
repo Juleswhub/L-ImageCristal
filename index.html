@@ -458,13 +458,6 @@
     min-width: 0;
 }
 
-.about-visuals img { width: 100%; max-width: 100%; height: auto; display: block; }
-.about-logo  { width: 40%; margin: 0 auto; }
-
-.about-visuals img:last-child {
-    width: 40%;           /* smaller logo */
-    margin: 0 auto;
-}
 
 .about-text-content {
     min-width: 0;
@@ -576,13 +569,22 @@
     gap: 30px;
 }
 
-.about-visuals {
-    max-width: 420px;
+    .about-visuals .about-logo {
+    display: block;
+    width: 40%;
     margin: 0 auto;
 }
 
-.about-visuals img:last-child {
-    width: 50%;
+.about-photo {
+    display: block;
+    width: 85%;          /* desktop size */
+    height: auto;
+    margin-top: 40px;
+}
+    
+.about-visuals {
+    max-width: 420px;
+    margin: 0 auto;
 }
     
     .about-text-content h2 {
@@ -699,6 +701,13 @@ body.menu-open {
 @media (max-width: 768px) {
     body.menu-open {
         overflow: hidden;
+
+.about-visuals .about-logo { width: 50%; }
+
+.about-photo {
+    width: 100%;         /* slightly bigger on mobile */
+    margin-top: 30px;
+}
     }
     
     /* Add overlay when menu is open */
@@ -1435,9 +1444,7 @@ The island of Lanzarote generates feelings of familiarity, detachment, and isola
 
      <div class="about-visuals">
     <img class="about-logo"  src="/limagecristal/assets/L'imageCristal.png" alt="L'Image Cristal">
-    <img class="about-photo" src="/limagecristal/assets/AlexisJules3.png" alt="Alexis and Jules">
-
-        </div>
+           </div>
 
         <div class="about-text-content">
             <h2>About L'Image Cristal</h2>
@@ -1461,6 +1468,7 @@ The island of Lanzarote generates feelings of familiarity, detachment, and isola
                             designing user experiences, or creating immersive installations. Their goal is to create work that 
                             resonates visually and emotionally, leaning towards formal experimentation rather than being mentally challenging.
                         </p>
+            <img class="about-photo" src="/limagecristal/assets/AlexisJules3.png" alt="Alexis and Jules">
                     </div>
                 </div>
             </div>
