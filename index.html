@@ -740,12 +740,11 @@ body.menu-open {
 
             <nav class="nav-section">
                 <h2 class="nav-title" onclick="scrollToSection('short-films-section');">Short Films</h2>
-<a class="nav-link" onclick="showDetail('cruise'); closeMobileMenu();">Cruise Me, Cruise Me Babe</a>
-
+                <a class="nav-link" onclick="showDetail('suefilm'); closeMobileMenu();">Sue by the Sea</a>
+                <a class="nav-link" onclick="showDetail('cruise'); closeMobileMenu();">Cruise Me, Cruise Me Babe</a>
                 <a class="nav-link" onclick="showDetail('acheron'); closeMobileMenu();">Acheron</a>
                 <a class="nav-link" onclick="showDetail('burns'); closeMobileMenu();">When It Burns</a>
             </nav>
-
 
             <nav class="nav-section">
                 <h2 class="nav-title" onclick="scrollToSection('corporate-section');">Corporate</h2>
@@ -790,9 +789,17 @@ body.menu-open {
             <section id="short-films-section" class="category-section">
     <div class="category-header">
         <h2 class="category-title">Short Films</h2>
-        <span class="category-count">3 Projects</span>
-    </div>
+        <span class="category-count">4 Projects</span>
+    </div>      
     <div class="gallery">
+
+        <div class="gallery-item" onclick="showDetail('suefilm')">
+    <img src="/limagecristal/assets/SueByTheSea_MoodboardA.pdf" alt="Sue By The Sea">
+    <div class="overlay">
+        <div class="overlay-text">Sue By The Sea</div>
+    </div>
+</div>
+        
         <div class="gallery-item" onclick="showDetail('cruise')">
             <img src="/limagecristal/assets/CMCMB_Affiche.png" alt="Cruise Me">
             <div class="overlay">
@@ -1048,6 +1055,35 @@ Duration: 15min
         </a>
     </div>
 </div>
+
+    <div id="detail-suefilm" class="page detail-page">
+    <button class="back-button" onclick="showCategory('short-films')">← Back to Short Films</button>
+    <div class="detail-header">
+        <h1 class="detail-title">Sue By The Sea</h1>
+        <p class="detail-description"><strong>In Development</strong> 
+When two aspiring actresses receive an invitation to an
+exclusive nightclub hosted by the enigmatic Madame Radieuse,
+they uncover a sinister casting ritual in which every role
+demands the ultimate sacrifice.
+<br><br>
+Production: L'image Cristal - Co-Production Les Films Fauves - AIde financière sélective Film Fund Luxembourg
+<br>
+Duration: Estimated 20min
+            <br>
+Genre: Surreal body-horror, inspired by Giallo and Bertrand Mandico's universe
+        </p>
+    </div>
+    <div class="detail-content">
+        <div class="video-container">
+            <a href="https://vimeo.com/YOUR_VIDEO_ID" target="_blank" class="video-button">
+                Watch Video
+            </a>
+            <a href="https://vimeo.com/YOUR_VIDEO_ID" target="_blank">
+                <img class="detail-image" src="/limagecristal/assets/SueFilm.jpg" alt="Sue By The Sea">
+            </a>
+        </div>
+    </div>
+</div>
     
 <div id="detail-cruise" class="page detail-page">
     <button class="back-button" onclick="showCategory('short-films')">← Back to Short Films</button>
@@ -1055,12 +1091,22 @@ Duration: 15min
         <h1 class="detail-title">Cruise Me, Cruise Me Babe</h1>
         <p class="detail-description"><strong>In Distribution</strong> 
             <br>
-An insomniac photographer, who, during a late-night phone call with a mysterious young woman, recalls witnessing a surreal encounter: the soul of a man dressed in a tuxedo, floating in the sky, guided through the streets of Luxembourg City by an angel.</p>
+During a late-night phone conversation with a mysterious girl named Bliss, whose only visible feature is her lips, an insomniac photographer recalls witnessing a surreal encounter: the soul of a man in a tuxedo floating in the sky, guided through the streets of Luxembourg by an angel.
+            Her search leads her to a church and a hidden bar populated by veiled figures, where the boundaries between memory, dream, grief, and reality begin to dissolve.</p>
+    <br>
+        Duration: 16 min
+        <br>
+        Production: Colgado, L'image Cristal
+        <br>
+        Supported by Film Fund Luxembourg, Schëtter Commune, Bernard-Massard
+        <br>
+        Genre: Surreal drama. Intended to give life to Belgian painter René Magritte's surreal creations, inspired the poetic tension of David Lynch.
     </div>
    <div class="detail-content">
         <div class="video-container">
             <a href="https://www.youtube.com/watch?v=AdtMSDKfeD4&feature=youtu.be" target="_blank" class="video-button">
                 Watch Teaser
+                Don't hesitate to reach out if you'd like to request the screener!
             </a>
             <a href="https://www.youtube.com/watch?v=AdtMSDKfeD4&feature=youtu.be" target="_blank">
                 <img class="detail-image" src="/limagecristal/assets/Moodboard.png" alt="Cruise Me scene 1">
@@ -1073,7 +1119,32 @@ An insomniac photographer, who, during a late-night phone call with a mysterious
             Download Press Kit
         </a>
         <a href="/limagecristal/assets/CMCMB_PressKit.pdf" download="L-Image-Cristal-Press-Kit.pdf">
-            <img class="detail-image" src="/limagecristal/assets/AfficheCruiseMe.png" alt="Cruise Me, Cruise Me Babe press kit">
+            <img class="detail-image" src="/limagecristal/assets/Front_CMCMB.jpg" alt="Cruise Me, Cruise Me Babe press kit">
+        </a>
+    </div>
+        <div class="detail-content">
+        <a href="" target="_blank">
+            <img class="detail-image" src="/limagecristal/assets/AfficheStill30.png" alt="CMCMB2">
+        </a>
+    </div>
+        <div class="detail-content">
+        <a href="" target="_blank">
+            <img class="detail-image" src="/limagecristal/assets/AfficheStill40.png" alt="CMCMB3">
+        </a>
+    </div>
+        <div class="detail-content">
+        <a href="" target="_blank">
+            <img class="detail-image" src="/limagecristal/assets/AfficheStill50.png" alt="CMCMB4">
+        </a>
+    </div>
+        <div class="detail-content">
+        <a href="" target="_blank">
+            <img class="detail-image" src="/limagecristal/assets/AfficheStill6.50.png" alt="CMCMB5">
+        </a>
+    </div>
+        <div class="detail-content">
+        <a href="" target="_blank">
+            <img class="detail-image" src="/limagecristal/assets/eglise4c36(1)0.png" alt="CMCMB6">
         </a>
     </div>
 </div>
